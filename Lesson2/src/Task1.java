@@ -3,6 +3,8 @@ public class Task1 {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
+		
+		System.out.println("for github");
 		// TODO Auto-generated method stub
 
 		// 1a. Заполнить массив х целыми числами и
