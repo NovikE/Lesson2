@@ -25,6 +25,8 @@ public class Task1 {
 			x[i] = i + 5;
 			System.out.println(x[i]);
 		}
+		
+		
 	}
 
 }

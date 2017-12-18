@@ -109,35 +109,20 @@ public class Task2 {
 
 		// 11. ”далить из массива (1е задание) все элементы, кратные 3
 
-		int dl = x.length;
+		int[] y = new int[x.length];
+		int l = 0;
 
-		// x[0] = 33;
-		// x[1] = 99;
-
-		for (int i = 0; i < dl; i++) {
-
-			if ((x[i]) % 3 == 0) {
-				for (int k = i; k < dl; k++) {
-					if (k != (dl - 1)) {
-						x[k] = x[k + 1];
-
-					} else {
-						x[k] = 0;
-						dl = dl - 1;
-					}
-				}
-
-				if (i != 0) {
-					i = i - 1;
-
-				}
+		for (int i = 0; i < x.length; i++) {
+			if ((x[i]) % 3 != 0) {
+				y[l] = x[i];
+				l++;
 			}
 		}
 
 		System.out.println("Ёлементы массива(без элементов кратных трем):");
 
-		for (int l = 0; l < dl; l++) {
-			System.out.println(x[l]);
+		for (int i = 0; i < l; i++) {
+			System.out.print(y[i] + " ");
 		}
 	}
 }
